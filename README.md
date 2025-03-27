@@ -51,7 +51,7 @@ A simple Discord music bot built with discord.py that supports slash commands, h
 
 ### Example
 1. Use `!join` to make the bot join your voice channel.
-2. Use `!play <YouTube URL>` to play a song.
+2. Use `!play <YouTube Search>` to play a song.
 3. Use `!stop` to stop the music.
 4. Use `!leave` to disconnect the bot.
 
