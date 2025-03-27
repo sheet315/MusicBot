@@ -1,4 +1,4 @@
-```markdown
+
 # Discord Music Bot
 
 A simple Discord music bot built with discord.py that supports slash commands, hybrid commands, and plays music from YouTube. The bot uses a .env file to securely store the Discord bot token.
