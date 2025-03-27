@@ -236,6 +236,12 @@ async def process_queue(voice_client):
         except Exception as e:
             embed = create_embed("Error", f"An error occurred during playback: {str(e)}")
             await interaction.followup.send(embed=embed)
+    else:
+        await asyncio.sleep(15)
+        if not song_queue.empty() or voice_client.is_playing():
+            return
+        print(f"Disconnecting from {voice_client.channel} because the queue is empty.")
+        await voice_client.disconnect()
 
 @bot.tree.command(name="skip", description="Skip the current song.")
 async def skip(interaction: discord.Interaction):
